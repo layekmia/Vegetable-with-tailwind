@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .btn{
+        @apply py-2 px-7 rounded-lg  text-lg font-normal border border-solid border-primary-clr;
+    }
+    .primary-btn{
+        @apply bg-primary-clr text-white;
+    }
+    .secondary-btn{
+        @apply bg-transparent 
+    }
+    .desc-text{
+        @apply text-center text-sm font-light opacity-80 lg:text-[17px]
+    }
+}
+ 
