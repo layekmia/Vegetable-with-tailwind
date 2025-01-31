@@ -1388,6 +1388,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:border-\[\#4dcc23\]:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(77 204 35 / var(--tw-border-opacity, 1));
+}
+
 .hover\:bg-\[\#4dcc23\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(77 204 35 / var(--tw-bg-opacity, 1));
