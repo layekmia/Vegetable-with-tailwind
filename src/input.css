@@ -5,17 +5,50 @@
 @tailwind utilities;
 
 @layer components{
-    .btn{
-        @apply py-2 px-7 rounded-lg  text-lg font-normal border border-solid border-primary-clr;
+    @keyframes bounce-scale {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
     }
-    .primary-btn{
-        @apply bg-primary-clr text-white;
+
+    @keyframes leftslide {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes rightslide {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+      .left-menu {
+        animation: leftslide 1s ease-out;
+      }
+      
+      .right-menu {
+        animation: rightslide 900ms ease-out;
     }
-    .secondary-btn{
-        @apply bg-transparent 
+
+    .offer-card-bg{
+        background: url(../assets/vegetable-offer.png) no-repeat,
+        linear-gradient(to right bottom, #5cdd45, #aeeea2) no-repeat;
+        background-position: right bottom, center;
+        background-size: 250px, cover;
     }
-    .desc-text{
-        @apply text-center text-sm font-light opacity-80 lg:text-[17px]
-    }
+      
 }
- 

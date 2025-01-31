@@ -27,7 +27,7 @@ module.exports = {
         'primary-clr': '#179800',
         'secondary-clr': '#111111',
         'bg-primary-clr': '#efebe3'
-      }
+      },
     },
   },
   plugins: [],
