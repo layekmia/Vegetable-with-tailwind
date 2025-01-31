@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily:{
         'body-font': ['Sora', 'serif'],
+        'poppins': ['Poppins', 'serif']
       },
       colors:{
         'primary-clr': '#179800',
