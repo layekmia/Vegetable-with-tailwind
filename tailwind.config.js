@@ -26,7 +26,7 @@ module.exports = {
       colors:{
         'primary-clr': '#179800',
         'secondary-clr': '#111111',
-        'bg-primary-clr': '#efebe3'
+        'bg-primary-clr': '#f2f8f0'
       },
     },
   },
